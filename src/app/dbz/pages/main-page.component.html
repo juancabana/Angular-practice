@@ -1,0 +1,12 @@
+<h1>Dragon Ball-z</h1>
+<div class="row">
+  <div class="col">
+    <list
+      [characterList]="characters"
+      (onDelete)="onDeleteCharacter($event)"
+    ></list>
+  </div>
+  <div class="col">
+    <add-character (onNewCharacter)="onNewCharacter($event)"></add-character>
+  </div>
+</div>
